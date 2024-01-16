@@ -1,0 +1,12 @@
+{
+  "require": ["./scripts/mochaRegister.js"],
+  "extension": ["js", "ts"],
+  "spec": "src/**/*.spec.ts",
+  "bail": true,
+  "watch": true,
+  "slow": 5,
+  "timeout": 5000,
+  "watch-files": ["src/**/*.ts"],
+  "watch-ignore": ["node_modules"],
+  "node-option": "import=tsx"
+}

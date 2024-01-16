@@ -1,0 +1,25 @@
+# Dependency directory
+node_modules
+
+# Built output directory
+dist
+
+# Test files
+coverage
+*.spec.ts
+
+# IDE folders
+.vscode
+*.code-workspace
+
+# OS generated files (macOS)
+.DS_Store
+
+# Log files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Lock files (uncomment if you don't want to include them in your repo)
+# yarn.lock
+# package-lock.json

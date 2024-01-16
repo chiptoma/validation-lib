@@ -1,0 +1,26 @@
+{
+  "default": {
+    "required": {
+      "feminine": "{{label}} este obligatorie",
+      "masculine": "{{label}} este obligatoriu"
+    },
+    "requiredWhen": "{{label}} este obligatoriu atunci când {{referenceLabel}} este completat",
+    "min": "{{label}} trebuie să conțină minim {{min}} caracter{{min, plural, one {} other {e}}}",
+    "max": "{{label}} nu poate să conțină mai mult de {{max}}{{max, plural, one {} other { de}}} caracter{{max, plural, one {} other {e}}}",
+    "sameAs": "{{label}} trebuie să fie la fel cu {{referenceLabel}}",
+    "isCompanyName": "{{label}} poate să conțină doar litere, cifre, spații și următoarele caractere speciale: - _ . , ( )",
+    "isPersonName": "{{label}} poate să conțină doar litere, spații și următoarele caractere speciale: - '",
+    "isEmail": "{{label}} trebuie să fie o adresă de email validă",
+    "isPhoneNumber": "{{label}} trebuie să fie un număr de telefon valid",
+    "isUrl": "{{label}} trebuie să fie un link valid",
+    "hasMaxWords": "{{label}} nu poate să conțină mai mult de {{maxWords}} cuvint{{maxWords, plural, one {} other {e}}}",
+    "hasLowercase": "{{label}} trebuie să conțină cel puțin {{min}}{{!max ? ' liter' + (min > 1 ? 'e' : 'ă') + ' mic' + (min > 1 ? 'i' : 'ă') : ''}}{{max ? ' și cel mult ' + max + ' liter' + (max > 1 ? 'e' : 'ă') + ' mic' + (max > 1 ? 'i' : 'ă') : ''}}",
+    "hasUppercase": "{{label}} trebuie să conțină cel puțin {{min}}{{!max ? ' liter' + (min > 1 ? 'e' : 'ă') + ' mare' + (min > 1 ? 'i' : 'ă') : ''}}{{max ? ' și cel mult ' + max + ' liter' + (max > 1 ? 'e' : 'ă') + ' mare' + (max > 1 ? 'i' : 'ă') : ''}}",
+    "hasDigits": "{{label}} trebuie să conțină cel puțin {{min}}{{!max ? ' cifr' + (min > 1 ? 'e' : 'ă') : ''}}{{max ? ' și cel mult ' + max + ' cifr' + (max > 1 ? 'e' : 'ă') : ''}}",
+    "notContainsUrl": "{{label}} nu poate să conțină link-uri",
+    "notContainsEmail": "{{label}} nu poate să conțină adrese de email",
+    "notContainsPhoneNumber": "{{label}} nu poate să conțină numere de telefon",
+    "onlyAlphaNumericSpaceHyphen": "{{label}} poate să conțină doar litere, cifre, spații și cratime",
+    "onlyAlphaSpaceHyphen": "{{label}} poate să conțină doar litere, spații și cratime"
+  }
+}
