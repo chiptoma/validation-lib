@@ -7,8 +7,13 @@
     "removeComments": true, // Remove comments to further reduce file size
     "incremental": false, // Optional: Consider disabling for a clean production build
     "skipLibCheck": false, // Enable lib check for thorough type checking
-    "noEmitOnError": true // Ensure no files are emitted if there are type errors
+    "noEmitOnError": true, // Ensure no files are emitted if there are type errors
+    "plugins": [
+      // Transform paths in output .js files
+      { "transform": "typescript-transform-paths" },
+      // Transform paths in output .d.ts files (Include this line if you output declarations files)
+      { "transform": "typescript-transform-paths", "afterDeclarations": true }
+    ]
   },
-  "include": ["src", "src/typings/index.d.ts"],
   "exclude": ["**/*.spec.ts", "**/*.test.ts"]
 }

@@ -17,8 +17,8 @@
     "paths": {
       "@/*": ["./*"],
       "@src/*": ["./src/*"],
-      "@typings": ["./src/typings"],
-      "@helpers": ["./src/helpers"],
+      "@typings/*": ["./src/typings/*"],
+      "@helpers/*": ["./src/helpers/*"],
       "@utils/*": ["./src/utils/*"]
     }
   },
