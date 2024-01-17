@@ -230,6 +230,11 @@
   resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.1.1.tgz#1ec17e2edbec25c8306d424ecfbf13c7de1aaa31"
   integrity sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==
 
+"@rvagg/chai-as-promised@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@rvagg/chai-as-promised/-/chai-as-promised-8.0.1.tgz#129c900ac22b8074559ecc5034f0c5cb47ea48e5"
+  integrity sha512-QlS0rw/cenLux73r0sg5z167IvfWtbz2n9l/PxiNHpZB9fTsG7tX5MlAhGXcbkvoWDnOfBd/lvjvvalEzwovwQ==
+
 "@tsconfig/node-lts@^20.1.1":
   version "20.1.1"
   resolved "https://registry.yarnpkg.com/@tsconfig/node-lts/-/node-lts-20.1.1.tgz#c43c9cbfc9c4f6e0a5146cd3b16cd79720033252"
@@ -556,13 +561,6 @@ caniuse-lite@^1.0.30001565:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001577.tgz#a24991eb4ad67324ba8b96716340d53151f2f6f8"
   integrity sha512-rs2ZygrG1PNXMfmncM0B5H1hndY5ZCC9b5TkFaVNfZ+AUlyqcMyVIQtc3fsezi0NUCk5XZfDf9WS6WxMxnfdrg==
 
-chai-as-promised@^7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/chai-as-promised/-/chai-as-promised-7.1.1.tgz#08645d825deb8696ee61725dbf590c012eb00ca0"
-  integrity sha512-azL6xMoi+uxu6z4rhWQ1jbdUhOMhis2PvscD/xjLqNMkv3BPPp2JyyuTHOrf9BOosGpNQ11v6BKv/g57RXbiaA==
-  dependencies:
-    check-error "^1.0.2"
-
 chai@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/chai/-/chai-5.0.0.tgz#da1ae496fdac30e97062cbd59e6e2f7bb4c78cc0"
@@ -590,13 +588,6 @@ chalk@^4.0.0, chalk@^4.1.0:
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
-
-check-error@^1.0.2:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/check-error/-/check-error-1.0.3.tgz#a6502e4312a7ee969f646e83bb3ddd56281bd694"
-  integrity sha512-iKEoDYaRmd1mxM90a2OEfWhjsjPpYPuQ+lMYsoxB126+t8fw7ySEO48nmDg5COTjxDI65/Y2OWpeEHk3ZOe8zg==
-  dependencies:
-    get-func-name "^2.0.2"
 
 check-error@^2.0.0:
   version "2.0.0"
@@ -1107,7 +1098,7 @@ get-caller-file@^2.0.5:
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
-get-func-name@^2.0.1, get-func-name@^2.0.2:
+get-func-name@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/get-func-name/-/get-func-name-2.0.2.tgz#0d7cf20cd13fda808669ffa88f4ffc7a3943fc41"
   integrity sha512-8vXOvuE167CtIc3OyItco7N/dpRtBbYOsPsXCz7X/PMnlGjYjSGuZJgM1Y7mmew7BKf9BqvLX2tnOVy1BBUsxQ==

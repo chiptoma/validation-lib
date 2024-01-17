@@ -21,8 +21,12 @@
   ],
   "author": "Ciprian Toma <chip.dev.work@gmail.com>",
   "license": "MIT",
+  "overrides": {
+    "chai": "^5.0.0"
+  },
   "devDependencies": {
     "@eslint/js": "^8.56.0",
+    "@rvagg/chai-as-promised": "^8.0.1",
     "@tsconfig/node-lts": "^20.1.1",
     "@tsconfig/strictest": "^2.0.2",
     "@types/chai": "^4.3.11",
@@ -37,7 +41,6 @@
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
     "chai": "^5.0.0",
-    "chai-as-promised": "^7.1.1",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-chai-assert-bdd": "^0.0.3",

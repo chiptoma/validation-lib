@@ -1,7 +1,7 @@
 /* eslint-disable unicorn/filename-case */
 import * as chai from 'chai'
 
-import chaiAsPromised from 'chai-as-promised'
+import chaiAsPromised from '@rvagg/chai-as-promised'
 
 // Use chai-as-promised to test promises
 chai.use(chaiAsPromised)
