@@ -2,6 +2,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "declaration": true, // Generate type definitions for the build
     "sourceMap": false, // Disable source maps in production for smaller build size
     "removeComments": true, // Remove comments to further reduce file size
     "incremental": false, // Optional: Consider disabling for a clean production build

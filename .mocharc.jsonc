@@ -3,7 +3,7 @@
   "extension": ["js", "ts"],
   "spec": "src/**/*.spec.ts",
   "bail": true,
-  "watch": true,
+  "watch": false,
   "slow": 5,
   "timeout": 5000,
   "watch-files": ["src/**/*.ts"],

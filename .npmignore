@@ -7,6 +7,7 @@ coverage
 
 # Source files
 src
+locales
 
 # Build scripts
 scripts/
@@ -15,6 +16,10 @@ scripts/
 tsconfig*.json
 prettier.config.js
 eslint.config.js
+.mocharc.jsonc
+
+# IDE configuration files
+.vscode
 
 # CI/CD configuration
 .github

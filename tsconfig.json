@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "Node10",
     "typeRoots": ["./node_modules/@types", "./src/typings"],
     "types": ["global", "node", "mocha", "chai", "chai-as-promised"],
     "baseUrl": ".",
@@ -23,7 +23,7 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "skipDefaultLibCheck": false,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "paths": {
       "@/*": ["./*"],
       "@src/*": ["./src/*"],
@@ -32,6 +32,6 @@
       "@utils": ["./src/utils"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "src/**/*.d.ts"],
   "exclude": ["node_modules"]
 }

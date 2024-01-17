@@ -1,5 +1,5 @@
 import { addMethod, string } from 'yup'
-import isEmail, { IsEmailOptions } from 'validator/es/lib/isEmail'
+import validatorIsEmail, { IsEmailOptions } from 'validator/es/lib/isEmail'
 
 import { IContainsEmailTestContext } from './types'
 // @ts-expect-error: No types available
@@ -29,9 +29,9 @@ export const containsEmail = (value: string, opts?: Partial<IsEmailOptions>): bo
   // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-argument
   const potentialEmails = value.trim().match(emailRegexSafe())
   const options = { ...defaultOptions, ...opts }
-
+  console.dir(validatorIsEmail)
   // Use the validator package to validate the potential email addresses
-  return potentialEmails?.some((email) => isEmail(email, options)) ?? false
+  return potentialEmails?.some((email) => validatorIsEmail(email, options)) ?? false
 }
 
 // Add the `notContainsEmail` method to the yup string schema
