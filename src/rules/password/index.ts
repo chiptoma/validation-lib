@@ -1,21 +1,5 @@
-import { ref, string } from 'yup'
-
-interface IPasswordOptions {
-  min: number
-  max: number
-  lowercase: {
-    min: number
-    max?: number
-  }
-  uppercase: {
-    min: number
-    max?: number
-  }
-  digits: {
-    min: number
-    max?: number
-  }
-}
+import { IPasswordOptions } from './types.js'
+import { string } from 'yup'
 
 // The default options for the `password` rule.
 const defaultOptions: IPasswordOptions = {
@@ -56,13 +40,4 @@ export const password = (opts?: Partial<IPasswordOptions>) => {
     .hasDigits(digits.min, digits.max)
     .emptyToUndefined()
     .required()
-}
-
-/**
- * Validates the password confirmation.
- * @param [passwordPath] - The password schema path name, used to determine if the password confirmation is required (Default: `password`)'
- * @returns - A Yup string schema with validation rules for the password confirmation.
- */
-export const passwordConfirmation = (passwordPath = 'password') => {
-  return string().sameAs(ref(passwordPath)).emptyToUndefined().required()
 }

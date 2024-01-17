@@ -1,5 +1,5 @@
 import { TestContext } from 'yup'
-import { IsURLOptions } from 'validator/lib/isURL'
+import { IsURLOptions } from 'validator/lib/isURL.js'
 
 // Extend the Yup TestContext interface to include the options object
 export type IsUrlTestContext = TestContext<{

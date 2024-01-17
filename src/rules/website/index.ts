@@ -1,9 +1,5 @@
+import { IWebsiteOptions } from './types.js'
 import { string } from 'yup'
-
-interface IWebsiteOptions {
-  min: number
-  max: number
-}
 
 // The default options for the `website` rule.
 const defaultOptions: IWebsiteOptions = {

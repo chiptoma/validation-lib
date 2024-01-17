@@ -1,9 +1,8 @@
 {
-  "require": ["./scripts/mochaRegister.js"],
+  "require": ["./scripts/mocha-register.js"],
   "extension": ["js", "ts"],
   "spec": "src/**/*.spec.ts",
   "bail": true,
-  "watch": false,
   "slow": 5,
   "timeout": 5000,
   "watch-files": ["src/**/*.ts"],

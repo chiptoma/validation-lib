@@ -1,4 +1,3 @@
-export * from './helpers'
-export * from './utils'
-export * from './rules'
-export * from './typings/yup.d.ts'
+export * from './helpers/index.js'
+export * from './utils/index.js'
+export * from './rules/index.js'

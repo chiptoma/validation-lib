@@ -1,6 +1,6 @@
 import { addMethod, string } from 'yup'
 
-import { validateIfPresent } from '@utils'
+import { validateIfPresent } from '@utils/index.js'
 
 /**
  * Check if a string is a valid person name

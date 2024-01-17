@@ -9,5 +9,6 @@
     "skipLibCheck": false, // Enable lib check for thorough type checking
     "noEmitOnError": true // Ensure no files are emitted if there are type errors
   },
-  "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"]
+  "include": ["src", "src/typings/index.d.ts"],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"]
 }

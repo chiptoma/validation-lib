@@ -1,5 +1,6 @@
-import { Opts } from 'string-strip-html'
 import 'yup'
+
+import { Opts } from 'string-strip-html'
 
 // Extend the Yup StringSchema to include the `stripHtml` method
 declare module 'yup' {

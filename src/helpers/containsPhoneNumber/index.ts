@@ -1,8 +1,8 @@
-import { IContainsPhoneNumberOptions, IContainsPhoneNumberTestContext, IFindPhoneNumberInTextOptions } from './types'
+import { IContainsPhoneNumberOptions, IContainsPhoneNumberTestContext, IFindPhoneNumberInTextOptions } from './types.js'
 import { addMethod, string } from 'yup'
 
 import { MetadataJson } from 'libphonenumber-js'
-import { validateIfPresent } from '@utils'
+import { validateIfPresent } from '@utils/index.js'
 
 // Default options for the `containsPhoneNumber` helper.
 const defaultOptions: Partial<IContainsPhoneNumberOptions> = {

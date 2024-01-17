@@ -1,6 +1,6 @@
 import { Reference, addMethod, string } from 'yup'
 
-import { validateIfPresent } from '@utils'
+import { validateIfPresent } from '@utils/index.js'
 
 // Add the `requiredWhen` method to the yup string schema
 addMethod(string, 'requiredWhen', function (ref: Reference & { label?: string }, refLabel?: string, message?: string) {

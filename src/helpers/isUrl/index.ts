@@ -1,14 +1,17 @@
 import { addMethod, string } from 'yup'
-import validatorIsUrl, { IsURLOptions } from 'validator/es/lib/isURL'
+import validatorIsUrlModule, { IsURLOptions } from 'validator/es/lib/isURL.js'
 
-import { IsUrlTestContext } from './types'
-import { validateIfPresent } from '@utils'
+import { IsUrlTestContext } from './types.js'
+import { validateIfPresent } from '@utils/index.js'
 
 // Default options for the `validator.isURL` method.
 const defaultOptions: Partial<IsURLOptions> = {
   require_protocol: false,
   allow_fragments: false,
 }
+
+// Required because of the Node.js module system.
+const validatorIsUrl = validatorIsUrlModule.default
 
 /**
  * Checks if a string is a valid URL.

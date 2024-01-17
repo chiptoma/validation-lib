@@ -1,8 +1,8 @@
-import { IsPhoneNumberOptions, IsPhoneNumberTestContext } from './types'
+import { IsPhoneNumberOptions, IsPhoneNumberTestContext } from './types.js'
 import { Reference, addMethod, string } from 'yup'
 
 import { MetadataJson } from 'libphonenumber-js'
-import { validateIfPresent } from '@utils'
+import { validateIfPresent } from '@utils/index.js'
 
 // The default options for the `isPhoneNumber` helper.
 const defaultOptions: Partial<IsPhoneNumberOptions> = {

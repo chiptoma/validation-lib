@@ -1,4 +1,4 @@
-import { IsEmailOptions } from 'validator/lib/isEmail'
+import { IsEmailOptions } from 'validator/lib/isEmail.js'
 import { TestContext } from 'yup'
 
 // Extend the Yup TestContext interface to include the options object

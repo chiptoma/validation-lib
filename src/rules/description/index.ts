@@ -1,9 +1,5 @@
+import { IDescriptionOptions } from './types.js'
 import { string } from 'yup'
-
-interface IDescriptionOptions {
-  min: number
-  max: number
-}
 
 // The default options for the `description` rule.
 const defaultOptions: IDescriptionOptions = {

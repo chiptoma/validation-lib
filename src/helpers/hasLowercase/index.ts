@@ -1,6 +1,6 @@
 import { addMethod, string } from 'yup'
 
-import { validateIfPresent } from '@utils'
+import { validateIfPresent } from '@utils/index.js'
 
 /**
  * Checks if a string has a minimum and optional maximum number of lowercase letters.

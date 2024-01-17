@@ -1,21 +1,17 @@
-# Node modules
+# Folders
 node_modules
-
-# Test files
-coverage
-*.spec.ts
-
-# Source files
 src
 locales
+scripts
+coverage
 
-# Build scripts
-scripts/
+# Test files
+*.spec.ts
+*.test.ts
 
 # Configuration files
+*.config.js
 tsconfig*.json
-prettier.config.js
-eslint.config.js
 .mocharc.jsonc
 
 # IDE configuration files
@@ -23,14 +19,13 @@ eslint.config.js
 
 # CI/CD configuration
 .github
+.gitignore
 
 # Log files
-npm-debug.log
-yarn-debug.log
-yarn-error.log
+*.log
 
 # Lock files
-yarn.lock
+*.lock
 
 # Temporary files
 .DS_Store

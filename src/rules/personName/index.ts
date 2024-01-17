@@ -1,13 +1,8 @@
+import { IPersonNameOptions } from './types.js'
 import { string } from 'yup'
 
-interface INameOptions {
-  min: number
-  max: number
-  maxWords: number
-}
-
 // The default options for the `name` rule.
-const defaultOptions: INameOptions = {
+const defaultOptions: IPersonNameOptions = {
   min: 3,
   max: 50,
   maxWords: 4,
@@ -21,7 +16,7 @@ const defaultOptions: INameOptions = {
  * @param [opts.maxWords] - The maximum number of words allowed in the name. (Default: `4`)
  * @returns A yup string schema with validation rules for the name.
  */
-export const name = (opts?: INameOptions) => {
+export const personName = (opts?: IPersonNameOptions) => {
   const { min, max, maxWords } = { ...defaultOptions, ...opts }
 
   return string().min(min).max(max).isPersonName().hasMaxWords(maxWords).emptyToUndefined().required()

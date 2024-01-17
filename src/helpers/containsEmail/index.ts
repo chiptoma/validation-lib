@@ -1,16 +1,19 @@
 import { addMethod, string } from 'yup'
-import validatorIsEmail, { IsEmailOptions } from 'validator/es/lib/isEmail'
+import validatorIsEmailModule, { IsEmailOptions } from 'validator/es/lib/isEmail.js'
 
-import { IContainsEmailTestContext } from './types'
+import type { IContainsEmailTestContext } from './types.d.ts'
 // @ts-expect-error: No types available
 import emailRegexSafe from 'email-regex-safe'
-import { validateIfPresent } from '@utils'
+import { validateIfPresent } from '@utils/index.js'
 
-// Default options for validator.isEmail
+// Default options for the `validator.isEmail` method
 const defaultOptions: Partial<IsEmailOptions> = {
   domain_specific_validation: true,
   allow_utf8_local_part: false,
 }
+
+// Requied because of the Node.js module system
+const validatorIsEmail = validatorIsEmailModule.default
 
 /**
  * Checks if a string contains email addresses.
@@ -29,8 +32,8 @@ export const containsEmail = (value: string, opts?: Partial<IsEmailOptions>): bo
   // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-argument
   const potentialEmails = value.trim().match(emailRegexSafe())
   const options = { ...defaultOptions, ...opts }
-  console.dir(validatorIsEmail)
-  // Use the validator package to validate the potential email addresses
+
+  // Use the validator package to validate each potential email address
   return potentialEmails?.some((email) => validatorIsEmail(email, options)) ?? false
 }
 
@@ -40,8 +43,11 @@ addMethod(string, 'notContainsEmail', function (message?: string, opts?: Partial
     name: 'notContainsEmail',
     message: message ?? 'validation:default.notContainsEmail',
     test: (value, testContext) => {
-      const { options } = testContext as IContainsEmailTestContext
-      const containsEmailOpts = { ...opts, ...options.context?.containsEmailOpts }
+      const {
+        options: { context },
+      } = testContext as IContainsEmailTestContext
+
+      const containsEmailOpts = { ...opts, ...context?.containsEmailOpts }
 
       return !validateIfPresent(containsEmail, value, containsEmailOpts)
     },

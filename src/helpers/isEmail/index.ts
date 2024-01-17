@@ -1,14 +1,17 @@
 import { addMethod, string } from 'yup'
-import validatorIsEmail, { IsEmailOptions } from 'validator/es/lib/isEmail'
+import validatorIsEmailModule, { IsEmailOptions } from 'validator/es/lib/isEmail.js'
 
-import { IIsEmailTestContext } from './types'
-import { validateIfPresent } from '@utils'
+import { IIsEmailTestContext } from './types.js'
+import { validateIfPresent } from '@utils/index.js'
 
 // Default options for the `validator.isEmail` method.
 const defaultOptions: Partial<IsEmailOptions> = {
   domain_specific_validation: true, // Extra rules even if the email address is syntactically valid
   allow_utf8_local_part: false, // Disallow non-ASCII characters in the local part of the email address
 }
+
+// Required because of the Node.js module system.
+const validatorIsEmail = validatorIsEmailModule.default
 
 /**
  * Checks if a string is a valid email address.

@@ -1,8 +1,8 @@
-import { IContainsUrlTestContext, UrlRegexSafeOptions } from './types'
+import { IContainsUrlTestContext, UrlRegexSafeOptions } from './types.js'
 import { addMethod, string } from 'yup'
 
 import urlRegexSafe from 'url-regex-safe'
-import { validateIfPresent } from '@utils'
+import { validateIfPresent } from '@utils/index.js'
 
 /**
  * Check if a string contains any urls
