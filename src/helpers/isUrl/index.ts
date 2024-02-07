@@ -34,7 +34,7 @@ export const isUrl = (value: string, opts?: Partial<IsURLOptions>): boolean => {
 addMethod(string, 'isUrl', function (message?: string, opts?: Partial<IsURLOptions>) {
   return this.test({
     name: 'isUrl',
-    message: message ?? 'validation:default.isUrl',
+    message: message ?? 'default.isUrl',
     test: (value, testContext) => {
       const { options } = testContext as IsUrlTestContext
       const isUrlOpts = {

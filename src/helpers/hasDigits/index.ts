@@ -28,7 +28,7 @@ export const hasDigits = (value: string, min: number, max?: number): boolean => 
 addMethod(string, 'hasDigits', function (min: number, max?: number, message?: string) {
   return this.test({
     name: 'hasDigits',
-    message: message ?? 'validation:default.hasDigits',
+    message: message ?? 'default.hasDigits',
     params: { min, max },
     test: (value) => validateIfPresent(hasDigits, value, min, max),
   })

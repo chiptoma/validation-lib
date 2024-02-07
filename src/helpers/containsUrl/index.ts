@@ -25,7 +25,7 @@ export const containsUrl = (value: string, opts?: Partial<UrlRegexSafeOptions>):
 addMethod(string, 'notContainsUrl', function (message?: string, opts?: Partial<UrlRegexSafeOptions>) {
   return this.test({
     name: 'notContainsUrl',
-    message: message ?? 'validation:default.notContainsUrl',
+    message: message ?? 'default.notContainsUrl',
     test: (value, testContext) => {
       const { options } = testContext as IContainsUrlTestContext
       const containsUrlOpts = {

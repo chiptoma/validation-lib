@@ -25,7 +25,7 @@ export const hasMaxWords = (value: string, maxWords: number): boolean => {
 addMethod(string, 'hasMaxWords', function (maxWords: number, message?: string) {
   return this.test({
     name: 'hasMaxWords',
-    message: message ?? 'validation:default.hasMaxWords',
+    message: message ?? 'default.hasMaxWords',
     params: { maxWords },
     test: (value) => validateIfPresent(hasMaxWords, value, maxWords),
   })

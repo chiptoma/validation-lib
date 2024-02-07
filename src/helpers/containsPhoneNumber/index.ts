@@ -85,7 +85,7 @@ export const containsPhoneNumber = async (
 addMethod(string, 'notContainsPhoneNumber', function (message?: string, opts?: Partial<IContainsPhoneNumberOptions>) {
   return this.test({
     name: 'notContainsPhoneNumber',
-    message: message ?? 'validation:default.notContainsPhoneNumber',
+    message: message ?? 'default.notContainsPhoneNumber',
     test: async (value, testContext) => {
       const { options } = testContext as IContainsPhoneNumberTestContext
       const containsPhoneNumberOpts = {

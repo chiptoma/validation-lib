@@ -82,7 +82,7 @@ addMethod(
   function (message?: string, callingCodeRef?: Reference<string>, opts?: Partial<IsPhoneNumberOptions>) {
     return this.test({
       name: 'isPhoneNumber',
-      message: message ?? 'validation:default.isPhoneNumber',
+      message: message ?? 'default.isPhoneNumber',
       test: async function (value, testContext) {
         const { options } = testContext as IsPhoneNumberTestContext
         const isPhoneNumberOpts = {

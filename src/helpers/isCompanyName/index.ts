@@ -22,7 +22,7 @@ export const isCompanyName = (value: string): boolean => {
 addMethod(string, 'isCompanyName', function (message?: string) {
   return this.test({
     name: 'isCompanyName',
-    message: message ?? 'validation:default.isCompanyName',
+    message: message ?? 'default.isCompanyName',
     test: (value) => validateIfPresent(isCompanyName, value),
   })
 })

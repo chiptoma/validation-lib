@@ -30,7 +30,7 @@ export const onlyAlphaNumericSpaceHyphen = (value: string): boolean => {
 addMethod(string, 'onlyAlphaNumericSpaceHyphen', function (message?: string) {
   return this.test({
     name: 'onlyAlphaNumericSpaceHyphen',
-    message: message ?? 'validation:default.onlyAlphaNumericSpaceHyphen',
+    message: message ?? 'default.onlyAlphaNumericSpaceHyphen',
     test: (value) => validateIfPresent(onlyAlphaNumericSpaceHyphen, value),
   })
 })

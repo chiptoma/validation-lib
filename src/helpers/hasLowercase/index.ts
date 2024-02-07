@@ -28,7 +28,7 @@ export const hasLowercase = (value: string, min: number, max?: number): boolean 
 addMethod(string, 'hasLowercase', function (min: number, max?: number, message?: string) {
   return this.test({
     name: 'hasLowercase',
-    message: message ?? 'validation:default.hasLowercase',
+    message: message ?? 'default.hasLowercase',
     params: { min, max },
     test: (value) => validateIfPresent(hasLowercase, value, min, max),
   })

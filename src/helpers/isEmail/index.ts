@@ -32,7 +32,7 @@ export const isEmail = (value: string, opts?: Partial<IsEmailOptions>): boolean 
 addMethod(string, 'isEmail', function (message?: string, opts?: Partial<IsEmailOptions>) {
   return this.test({
     name: 'isEmail',
-    message: message ?? 'validation:default.isEmail',
+    message: message ?? 'default.isEmail',
     test: (value, testContext) => {
       const { options } = testContext as IIsEmailTestContext
       const isEmailOpts = {

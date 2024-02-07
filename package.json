@@ -62,7 +62,9 @@
     "libphonenumber-js": "^1.10.53",
     "string-strip-html": "^13.4.5",
     "url-regex-safe": "^4.0.0",
-    "validator": "^13.11.0",
+    "validator": "^13.11.0"
+  },
+  "peerDependencies": {
     "yup": "^1.3.3"
   }
 }

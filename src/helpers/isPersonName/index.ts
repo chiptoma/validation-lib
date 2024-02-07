@@ -23,7 +23,7 @@ export const isPersonName = (value: string): boolean => {
 addMethod(string, 'isPersonName', function (message?: string) {
   return this.test({
     name: 'isPersonName',
-    message: message ?? 'validation:default.isPersonName',
+    message: message ?? 'default.isPersonName',
     test: (value) => validateIfPresent(isPersonName, value),
   })
 })

@@ -41,7 +41,7 @@ export const containsEmail = (value: string, opts?: Partial<IsEmailOptions>): bo
 addMethod(string, 'notContainsEmail', function (message?: string, opts?: Partial<IsEmailOptions>) {
   return this.test({
     name: 'notContainsEmail',
-    message: message ?? 'validation:default.notContainsEmail',
+    message: message ?? 'default.notContainsEmail',
     test: (value, testContext) => {
       const {
         options: { context },

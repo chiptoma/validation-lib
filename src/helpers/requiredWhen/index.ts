@@ -6,7 +6,7 @@ import { validateIfPresent } from '@utils/index.js'
 addMethod(string, 'requiredWhen', function (ref: Reference & { label?: string }, refLabel?: string, message?: string) {
   return this.test({
     name: 'requiredWhen',
-    message: message ?? 'validation:default.requiredWhen',
+    message: message ?? 'default.requiredWhen',
     params: {
       reference: ref.path,
       referenceLabel: refLabel ?? ref.label ?? ref.path,

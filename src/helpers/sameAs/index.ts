@@ -6,7 +6,7 @@ import { validateIfPresent } from '@utils/index.js'
 addMethod(string, 'sameAs', function (ref: Reference & { label?: string }, refLabel?: string, message?: string) {
   return this.test({
     name: 'sameAs',
-    message: message ?? 'validation:default.sameAs',
+    message: message ?? 'default.sameAs',
     params: {
       reference: ref.path,
       referenceLabel: refLabel ?? ref.label ?? ref.path,

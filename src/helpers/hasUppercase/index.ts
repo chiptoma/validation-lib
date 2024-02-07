@@ -29,7 +29,7 @@ export const hasUppercase = (value: string, min: number, max?: number): boolean 
 addMethod(string, 'hasUppercase', function (min: number, max?: number, message?: string) {
   return this.test({
     name: 'hasUppercase',
-    message: message ?? 'validation:default.hasUppercase',
+    message: message ?? 'default.hasUppercase',
     params: { min, max },
     test: (value) => validateIfPresent(hasUppercase, value, min, max),
   })
